@@ -1,0 +1,338 @@
+/* CSS pour tout le body */
+body {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* CSS pour tout le header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Menu de navigation supérieur*/
+.esiea {
+    flex: 1;
+	font-size: 4vw;
+    font-weight: bold;  
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.nav {
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    list-style: none; 
+}
+.nav img {
+    width: 70%;
+}
+
+/* Photo d'accueil dynamique */
+.large-picture img {
+    width: 100%;
+    display: block;
+}
+.slider {
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.btn_nav {
+cursor: pointer;
+position: absolute;
+font-size: 30px;
+color: blue;
+background-color: white;
+opacity: 0.7;  
+}
+.gauche{
+bottom: 0;
+left: 0%;
+}
+.droite{
+bottom: 0;
+right:0%;
+}
+
+/* Ces deux classes sont pour l'implémentation du changement automatique d'image, voir main.js */
+.visible {
+    position: relative;
+    opacity: 1;
+}
+.hidden {
+    opacity: 0;
+    top:0;
+    left: 0;
+    position: absolute;
+}
+
+/* Concerne la description ainsi que sa photo */
+.description-picture {
+    margin-top: 6vw;
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.description-picture img {
+    width: 100%;
+    height: 100%;
+}
+.description-picture-1 {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-right: 2vw;
+}
+.description-picture-1-1 {
+    flex: 3;
+}
+.description-picture-1-2 {
+    text-align: justify;
+    flex: 3;
+}
+.description-picture-1-3 {
+    flex: 3;
+}
+.description-picture-1 h1{
+    text-align: center;
+}
+
+.description-picture-2 {
+    flex: 2;
+}
+
+/* Petit ruban de navigation pour les projets */
+.ruban {
+    margin-top: 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.little-nav {
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+.little-nav p {
+    padding-right: 2vw;
+}
+.projet{
+    flex: 3;
+    font-weight: bold;  
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Projets avec hover et description */
+.flex-4-items {
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 1vw;
+    display: flex;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    justify-content: space-around;
+}
+.flex-item {
+    position: relative;
+    height: 20em;
+    width: 20em;
+    display: flex;
+    padding-top: 1em;
+}
+.info{
+    color: black;
+    position: absolute;
+    width: 50%;
+    bottom: 49px;
+    right: 143px;
+  }
+.nomProjet{
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+.seeMore{
+    font-weight: bold;
+  }
+.hover:hover{
+    opacity: 0.9;
+    transition: .6s ease-out;
+}
+.hover{
+    width: 100%;
+    height: 96%;
+    position: absolute;
+    background: grey;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+  }
+.hover p, h1 {
+    padding-left: 10%;
+}
+
+/* Boîte pour les avis clients */
+.box {
+    border-width:0.3vw;
+    border-style:solid;
+    border-color:grey;
+    margin: 7vw;
+    padding: 4vw;
+}
+.box h2 {
+    font-size: 3vw;
+}
+.form-2-items {
+    font-size: 2vw;
+    margin-top: 4vw;
+    display: flex;
+}
+.form-2-items img {
+    width: 40%;
+    border-radius: 50%;
+}
+.form-2-items > div {
+    flex: 1;
+    padding: 2vw;
+}
+.com {
+    border: 2px;
+    border-style: solid;
+    border-color: grey;
+}
+
+/* Actualité avec hover */
+.news-3-items {
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 1vw;
+    display: flex;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    justify-content: space-around;
+}
+.news-item {
+    border: 1px;
+    border-style: solid;
+    position: relative;
+    height: 10em;
+    width: 10em;
+    display: flex;
+    padding: 1em;
+    margin: 1em;
+}
+.news {
+    font-size: 4vw;
+    margin: 7vw;
+    font-weight: bold;  
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.hover-news:hover{
+    opacity: 0.9;
+    transition: .6s ease-out;
+}
+.hover-news{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: grey;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+  }
+.hover-news p, h1 {
+    padding-left: 10%;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    align-items: center;
+}
+.footer-item-esiea{
+    display: flex;
+    flex-direction: column;
+    font-size: 4vw;
+    flex: 1;
+    font-weight: bold;
+}
+.footer-item{
+    flex: 1;
+}
+
+/* Adapte la taille des éléments au grand écran */
+  @media screen and (min-width: 1600px) {
+    body {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    body > div {
+        font-size: 1vw;
+        font-family: 'Trebuchet MS', sans-serif;
+    }
+    .nav img{
+        width: 80%;
+    }
+    .flex-4-items{
+        flex-wrap: nowrap;
+    }
+    .flex-item {
+        height: 18em;
+        width: 18em;
+
+    }
+    .little-nav {
+        font-size: 2vw;
+    }
+    .box h2{
+        font-size: 2vw;
+    }
+    .form-2-items {
+        font-size: 1vw;
+    }
+    .news {
+        font-size: 2vw;
+        margin-bottom: 4vw;
+    }
+}
+
+/* Adapte la taille des éléments au petit écran */
+@media screen and (max-width:850px) 
+{
+    .nav img {
+        width: 90%;
+    }
+    .description-picture {
+        display: contents;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .description-picture-1-2{
+        font-size: large;
+    }
+    .box h2 {
+        font-size: large;
+    }
+    .form-2-items {
+        display: contents;
+        font-size: large;
+    }
+}

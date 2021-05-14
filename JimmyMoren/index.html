@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <!-- Tittle -->
+        <title>ESIEA - Jimmy Moren UFA32B</title>
+        <!-- Responsive -->
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <!-- CSS -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <!-- Header -->
+    <header>
+        <!-- Menu de navigation -->
+        <h1 class=esiea>ESIEA</h1>
+            <div class="nav">
+                    <a>Contact:</a>
+                    <a href=""><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href=""><img src="images/fb.png" alt="Facebook"></a>
+                    <a href=""><img src="images/google.png" alt="Google"></a>
+                    <a href=""><img src="images/msg.png" alt="Msg"></a>
+                    <a href=""><img src="images/planet.png" alt="Planet"></a>
+                    <a></a>Menu</a>
+                    <a href=""><img src="images/menu.png" alt="Menu"></a>
+            </div>
+    </header>
+
+    <body>
+        <!-- Slider avec boutons -->
+        <div class="slider">
+
+            <!-- Grosse photo -->
+            <div class="large-picture">
+                <img id="pic1" class="visible" src="images/large-picture-1.jpg" alt="Gros château1">
+                <img id="pic2" class="hidden"  src="images/large-picture-2.jpg" alt="Gros château2">
+                <img id="pic3" class="hidden"  src="images/large-picture-3.jpg" alt="Gros château3">
+            </div>
+
+            <!-- Bouton en bas à gauche -->
+            <button id ="pic1" class="btn_nav gauche" onclick="NextSlide(-1)"><</button>
+            
+            <!-- Bouton en bas à droite -->
+            <button id ="pic1" class="btn_nav droite"onclick="NextSlide(1)">></button>
+        </div>
+
+        <!-- Texte de description avec image -->
+        <div class="description-picture">
+            <div class="description-picture-1">
+                <div class="description-picture-1-1">
+                    <h1>Nous sommes les meilleurs bâtisseurs</h1>
+                </div>
+                <div class="description-picture-1-2">  
+                    <p>Morbi consequat leo nec volutpat commodo. Curabitur et mauris metus. Etiam pretium convallis ultricies. Maecenas quis faucibus ex. Donec aliquam non ipsum eu pretium. Donec ullamcorper semper porttitor. Cras et tellus nec tortor auctor vestibulum nec in eros. Vivamus eget nisl gravida.</p>
+                </div>
+                <div class="description-picture-1-3">  
+                    <h1>Construisons ensemble !</h1>
+                </div>
+            </div>
+            <div class="description-picture-2">
+                <img src="images/tour.jpg" alt="Tour">
+            </div>
+        </div>
+
+        <!-- Navigation pour les projets -->
+        <div class=ruban>
+            <div class="little-nav">
+            <p class=projet>Nos projets</p>
+                <p>Anciens</p>
+                <p>Présents</p>
+                <p>Futures</p>
+            </div>
+        </div>
+        <div class="flex-4-items">
+            <div class="flex-item">
+                <img src="images/flex-1.jpg" alt="projet1">
+                <div class="info">
+                    <p class="nomProjet">Projet 1</p>
+                    <p class="seeMore">Voir plus</p>
+                    </div>
+                    <div class="hover">
+                        <h1>Projet 1</h1>
+                            <p>Ceci est le premier projet</p>
+                    </div>
+            </div>
+            <div class="flex-item">
+                <img src="images/flex-1.jpg" alt="projet2">
+                <div class="info">
+                    <p class="nomProjet">Projet 2</p>
+                    <p class="seeMore">Voir plus</p>
+                    </div>
+                    <div class="hover">
+                        <h1>Projet 2</h1>
+                            <p>Ceci est le deuxième projet</p>
+                    </div>
+            </div>
+            <div class="flex-item">
+                <img src="images/flex-1.jpg" alt="projet3">
+                <div class="info">
+                    <p class="nomProjet">Projet 3</p>
+                    <p class="seeMore">Voir plus</p>
+                    </div>
+                    <div class="hover">
+                        <h1>Projet 3</h1>
+                            <p>Ceci est le troisième projet</p>
+                    </div>
+            </div>
+            <div class="flex-item">
+                <img src="images/flex-1.jpg" alt="projet4">
+                <div class="info">
+                    <p class="nomProjet">Projet 4</p>
+                    <p class="seeMore">Voir plus</p>
+                    </div>
+                    <div class="hover">
+                        <h1>Projet 4</h1>
+                            <p>Ceci est le quatrième projet</p>
+                    </div>
+            </div>
+        </div>
+        
+        <!-- Retour clients -->
+        <div class="box">
+            <h2>Nos derniers clients</h2>
+            <div class="form-2-items">
+                <div class="com">
+                    <img src="images/humain1.png" alt="client1">
+                    <p>L'équipe est très professionnelle, le chantier a commencé rapidemment. Je suis vraiment satisfait de mon château !</p>
+                </div>
+                <div class="com">
+                    <img src="images/humain1.png" alt="client1">
+                    <p>Je recommande cette entreprise. J'ai fait construire une tour dans mon jardin, je n'en suis pas déçu. Mes enfants adorent y jouer.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Actualités -->
+        <p class=news>Notre actualité</p>
+        <div class="news-3-items">
+            <div class="news-item">
+                <img src="images/actu.jpg" alt="projet1">
+                <div class="info">
+                    </div>
+                    <div class="hover-news">
+                        <h1>Actualité 1</h1>
+                            <p>Ceci est la première actualité</p>
+                    </div>
+            </div>
+            <div class="news-item">
+                <img src="images/actu.jpg" alt="projet2">
+                <div class="info">
+                    </div>
+                    <div class="hover-news">
+                        <h1>Actualité 2</h1>
+                            <p>Ceci est la deuxième actualité</p>
+                    </div>
+            </div>
+            <div class="news-item">
+                <img src="images/actu.jpg" alt="projet3">
+                <div class="info">
+                    </div>
+                    <div class="hover-news">
+                        <h1>Actualité 3</h1>
+                            <p>Ceci est la troisième actualité</p>
+                    </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-item-esiea" ><p>ESIEA</p></div>
+            <div class="footer-item"><p>footer bloc 1-1</p><p>footer bloc 1-2</p><p>footer bloc 1-3</p></div>
+            <div class="footer-item"><p>footer bloc 2-1</p><p>footer bloc 2-2</p><p>footer bloc 2-3</p></div>
+            <div class="footer-item"><p>footer bloc 3-1</p><p>footer bloc 3-2</p><p>footer bloc 3-3</p></div>
+            <div class="footer-item"><p>footer bloc 4-1</p><p>footer bloc 4-2</p><p>footer bloc 4-3</p></div>
+            <div class="footer-item"><p>Site réalisé par Jimmy Moren</p></div>
+        </div>
+
+        <!-- Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
